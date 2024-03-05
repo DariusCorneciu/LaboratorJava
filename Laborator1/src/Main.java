@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.*;
  public class Main {
     public static void divizibile(int numar) {
@@ -12,12 +13,33 @@ import java.util.*;
         }
 
     }
-    public static void compare(int a,int b, int c){
+     public static void compare(Integer a, Integer b, Integer c) {
+         if (a.compareTo(b) >= 0) {
+             if (b.compareTo(c) >= 0) {
+                 System.out.println(a + " <= " + b + " <= " + c);
+             } else {
+                 if (a.compareTo(c) >= 0) {
+                     System.out.println(c + " <= " + a + " <= " + b);
+                 } else {
+                     System.out.println(a + " <= " + c + " <= " + b);
+                 }
+             }
+         } else {
+             if (b.compareTo(c) >= 0) {
+                 if (c.compareTo(a) >= 0) {
+                     System.out.println(b + " <= " + c + " <= " + a);
+                 } else {
+                     System.out.println(b + " <= " + a + " <= " + c);
+                 }
+             } else {
+                 System.out.println(c + " <= " + b + " <= " + a);
+             }
+         }
+     }
 
+     public static int Fibonnacci(int poz){
 
-    }
-    public static int Fibonnacci(int poz){
-
+        if(poz <=0 ) return 0;
         if(poz == 1 || poz == 2) return 1;
 
         return Fibonnacci(poz-1) + Fibonnacci(poz-2);
@@ -29,7 +51,7 @@ import java.util.*;
     public static void main(String[] args) {
     //sout pentru System.out.prinln();
 
-        Integer a = Integer.MIN_VALUE;
+        //Integer a = Integer.MIN_VALUE;
         Integer obj = Integer.valueOf(1);
         /// exista clasa care infasoara practic primitivele si le da anumite functii
         
@@ -52,9 +74,19 @@ import java.util.*;
         System.out.println("Citim n: ");
         n = cin.nextInt();
         System.out.println("3. Al "+n+" elea numar din sirul Fibonacci.");
-        System.out.println(Fibonnacci(n));
+        System.out.println(Fibonnacci(n-1));
+        int a,b,c;
+        System.out.println("Citim a:");
+        a=cin.nextInt();
 
+        System.out.println("Citim b:");
+        b=cin.nextInt();
 
+        System.out.println("Citim c:");
+        c=cin.nextInt();
+
+        compare(a,b,c);
     }
+
 
 }
