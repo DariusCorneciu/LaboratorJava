@@ -1,4 +1,4 @@
- #☕ Laborator Java
+ # ☕ Laborator Java (Programare Avansata pe Obiecte)
 
   ### 🥛Exercitii Laborator 2
 ```
