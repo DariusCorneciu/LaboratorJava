@@ -1,14 +1,26 @@
 import CalculArii.*;
 
+import java.util.Scanner;
+
 public class Application {
     public static void main(String[] args) {
-    Cerc cerc = new Cerc(10);
-    Patrulater patrat = new Patrulater(10,10);
+
+    Scanner cin = new Scanner(System.in);
+    int raza,lungime,latime;
+
+    System.out.println("Raza:");
+    raza = cin.nextInt();
+
+    System.out.println("Lungime:");
+    lungime = cin.nextInt();
+
+    System.out.println("Latime:");
+    latime = cin.nextInt();
+
+    Cerc cerc = new Cerc(raza);
+    Patrulater patrat = new Patrulater(lungime,latime);
         System.out.println(cerc.calculPerimetru());
         System.out.println(patrat.calculPerimetru());
-
-
-
 
     }
 }
