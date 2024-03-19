@@ -14,3 +14,15 @@ Cum se formeaza secventa Fibonacci:
 1 2 (suma anterioarelor doua numere) ...
 
 ```
+  ### 🥛Exercitii Laborator 3
+```
+--
+```
+  ### 🥛Exercitii Laborator 4
+```
+1.Sa se implementeze clasele Cerc si Patrulater.
+Cu interfata Calcul care va contine metoda calculPerimetru.
+- Cerc si Patrulater implementeza Calcul
+- Clasele principala are metoda main va fi Application. In aceasta clasa se va afisa perimetrul pentru cerc si patrulater
+
+```
