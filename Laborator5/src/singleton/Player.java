@@ -1,5 +1,7 @@
 package singleton;
 
+import java.util.Scanner;
+
 public class Player {
 
     private String firstName;
@@ -33,6 +35,15 @@ public class Player {
             return true;
         }
     }
+    public void setName(Scanner cin){
+        System.out.println("First Name: ");
+        String name =  cin.nextLine();
+        this.firstName = name;
+        System.out.println("Last Name: ");
+        name =  cin.nextLine();
+        this.lastName = name;
+
+    }
     public String getFullName(){
         return firstName+" "+lastName;
     }
@@ -48,11 +59,5 @@ public class Player {
         return armor;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 }
