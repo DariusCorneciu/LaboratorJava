@@ -37,3 +37,16 @@ Cu interfata Calcul care va contine metoda calculPerimetru.
 - Clasele principala are metoda main va fi Application. In aceasta clasa se va afisa perimetrul pentru cerc si patrulater
 
 ```
+
+  ### 🥛Exercitii Laborator 5
+```
+1. sa se afiseze lungimea
+ Folosind expresii regulate sa se implementeze:
+2. sa se afiseze true/false daca are doar litere mari si litere mici (excludem . si blank)
+3. sa se imparta textul in cuvinte si sa se afiseze cuvintele de la mijloc
+   (deoarece textul are numar par de cuvinte se va afisa : cu continutul)
+4. se se afiseze stringul reverse (vezi StringBuilder)
+
+Sa se creeze o clasa de tip singleton si sa se faca lucruri cu ea(Am ales un joc simplu de zaruri )
+
+```
