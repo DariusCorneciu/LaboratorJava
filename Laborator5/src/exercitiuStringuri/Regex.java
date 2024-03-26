@@ -38,6 +38,10 @@ public class Regex {
             return bagOfWords[length];
         }
     }
+    public String reverse(){
+        StringBuilder builder = new StringBuilder(string);
+        return builder.reverse().toString();
+    }
     public String getString() {
         return string;
     }
